@@ -13,11 +13,7 @@ def coolNum(dec,occurence):
 
     print(cnt)
     if(cnt >= occurence):
-        print("Cool Number")            
-
-
-
-
+        print("Cool Number")
 
 if __name__ == "__main__":
     coolNum(45,2)
