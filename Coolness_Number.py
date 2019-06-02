@@ -1,3 +1,5 @@
+import os
+
 
 def coolNum(dec,occurence):
     binaryNum = bin(dec)
@@ -10,9 +12,13 @@ def coolNum(dec,occurence):
                 result=str(1)
                 cnt +=1
 
-    print(cnt)
     if(cnt >= occurence):
-        print("Cool Number")
+         print (cnt)
 
 if __name__ == "__main__":
-    coolNum(22,2)
+   
+    t = int(input())
+
+    for t_itr in range(t):
+        q = list(map(int, input().rstrip().split()))
+        coolNum(q[0],q[1])
