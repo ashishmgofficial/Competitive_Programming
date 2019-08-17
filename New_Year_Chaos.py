@@ -5,7 +5,6 @@ def minimumBribes(q):
     for pos , i in reversed(list(enumerate(q,1))):
         p = set(q[slice(max(0,pos-3),pos)])
         if pos not in p :
-            print(str(pos))
             return 'Too Chaotic'
         elif pos in p:
             if q[pos-3]-pos == 0:
@@ -16,10 +15,7 @@ def minimumBribes(q):
                 temp =q[pos-2]
                 q[pos-2] = q[pos-1]
                 q[pos-1] = temp
-                print(''.join(str(q)))
             elif q[pos-1] != pos:
-                print(''.join(str(q)))
-                print(str(pos-1))
                 count+=1
                 temp =q[pos-2]
                 q[pos-2] = q[pos-1]
